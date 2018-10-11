@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
-## Development server
+There are three high level components
+1. The Navigation Component
+2. The Breadcrumbs Component: renders a hierarchical representation of where in the application the user currently is.
+3. The Product List Component
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### The Product List Component
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+It is a representation of a collection of products.
+Each product row is composed of:
+- the Product Image component would be responsible for rendering a product image, given its
+image name
+- the Product Department component would render the department tree, like Men > Shoes >
+Running Shoes
+- the Price Display component would render the price. Imagine that our implementation
+customizes the pricing if the user is logged in to include system-wide tier discounts or include
+shipping for instance. We could implement all this behavior into this component.
