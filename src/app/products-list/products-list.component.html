@@ -1,3 +1,8 @@
-<p>
-  products-list works!
-</p>
+<div class="items">
+  <product-row
+    *ngFor="let myProduct of productList"
+    [product]="myProduct"    <!-- we want to pass myProduct (the local variable) to the input product of the product-row component. -->
+    (click)='clicked(myProduct)'
+    [class.selected]="isSelected(myProduct)">
+  </product-row>
+</div>

@@ -13,6 +13,7 @@ import { Product } from './product.model';
 })
 export class AppComponent {
   products: Product[];  // or products: Array<Product>;
+  
   constructor() {
     this.products = [
     new Product(
