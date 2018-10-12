@@ -1,11 +1,15 @@
+<span class="product-image">
 <product-image [product]="product"></product-image>
-<div class="content">
-  <div class="header">{{ product.name }}</div>
+</span>
+<div class="content text-center">
+  <div class="header display-4 font-weight-bold">{{ product.name }}</div>
   <div class="meta">
-    <div class="product-sku">SKU #{{ product.sku }} </div>
+    <div class="product-sku display-4 text-uppercase font-weight-normal text-secondary">SKU #{{ product.sku }} </div>
   </div>
-  <div class="description">
+  <div class="description display-4 text-capitalize font-weight-normal">
     <product-department [product]="product"></product-department>
   </div>
 </div>
-<!-- <price-display [price]="product.price"></price-display> -->
+<span class="product-price text-right display-4 text-secondary">
+<price-display [price]="product.price"></price-display>
+</span>

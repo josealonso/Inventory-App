@@ -27,7 +27,7 @@ export class AppComponent {
       'Blue Jacket',
       '/assets/images/products/blue-jacket.jpg',
       ['Women', 'Apparel', 'Jackets & Vests'],
-      29.99)
+      8.99)
     ];
   }
 
