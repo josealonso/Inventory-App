@@ -1,0 +1,10 @@
+#title {
+	margin: 50px;
+	text-align: center;
+	font-weight: bold; /* It doesn't do anything !! */
+}
+
+#title-text {
+	font-weight: bold; 
+	font-size: 40px;
+}

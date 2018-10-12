@@ -1,15 +1,24 @@
-<span class="product-image">
-<product-image [product]="product"></product-image>
-</span>
-<div class="content text-center">
-  <div class="header display-4 font-weight-bold">{{ product.name }}</div>
-  <div class="meta">
-    <div class="product-sku display-4 text-uppercase font-weight-normal text-secondary">SKU #{{ product.sku }} </div>
+<section id="product-info">
+  <div class="container">
+    <div class="row align-items-center pt-5">  <!-- Every Bootstrap 4 .row is by default a flex-container -->
+      <div class="col-12 col-md-2 product-image">
+        <product-image [product]="product"></product-image>
+      </div>
+
+      <div>
+      <div class="col-12 header font-weight-bold">{{ product.name }}</div>
+      <div class="col-12 meta product-sku text-uppercase font-weight-normal text-secondary">SKU #{{ product.sku }} </div>
+      <div class="col-12 description text-capitalize font-weight-normal">
+        <product-department [product]="product"></product-department>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-2 product-price text-right text-secondary">
+        <price-display [price]="product.price"></price-display>
+      </div>
+
+    </div>
   </div>
-  <div class="description display-4 text-capitalize font-weight-normal">
-    <product-department [product]="product"></product-department>
-  </div>
-</div>
-<span class="product-price text-right display-4 text-secondary">
-<price-display [price]="product.price"></price-display>
-</span>
+</section>
+
+<!-- <div class="content text-center"> -->

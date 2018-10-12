@@ -1,0 +1,7 @@
+/*.container {
+    margin: 50px;
+} */
+
+.header, .meta, .description, .product-price {
+    font-size: 1.6em;
+}

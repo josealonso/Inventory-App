@@ -4,7 +4,7 @@ import { Product } from '../product.model';
 @Component({
   selector: 'product-image',
   template: `
-  <div class="mt-5 ml-5 text-center">
+  <div>
     <img class="product-image rounded-circle" [src]="product.imageUrl">
   </div>
   `,
