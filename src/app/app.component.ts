@@ -19,7 +19,7 @@ export class AppComponent {
     new Product(
       'NICEHAT',
       'A Nice Black Hat',
-      '/assets/images/products/black-hat.jpg',
+      'src/assets/images/products/black-hat.jpg',
       ['Men', 'Accessories', 'Hats'],
       29.99),
     new Product(
